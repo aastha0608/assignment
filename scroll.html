@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 300vh;" id="div" ></div>
+    <script>
+        let div=document.getElementById("div")
+        window.addEventListener("scroll",function(){
+            let hue=Math.round(Math.random()*(360-0)-0)
+            let light=Math.round(Math.random()*(90-0)-0)
+            let saturation=Math.round(Math.random()*(90-0)-0)
+            div.style.background=`hsl(${hue},${light}%,${saturation}%)`
+        })
+
+    </script>
+</body>
+</html>
+    
